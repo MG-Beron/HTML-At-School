@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kappa</title>
+	<meta charset="Windows-1251">
+	<style>
+		body{
+			color: black;
+			background-color: #F5E4F9;
+		}
+		#p{
+			font-size: 4px;
+			font-family: Cambria;
+			text-align: center;
+		}
+		.center{
+			text-align: center;
+		}
+		.left{
+			text-align: left;
+			margin-left:80%;
+		}
+		.justify{
+			text-align: justify;
+			margin-left:10%;
+		}
+		h1{
+			color: #9E408B;
+			text-align: center;
+		}
+		div{
+			position: absolute;
+			top: 35%;
+			left: 10%;
+		}
+	</style>
+</head>
+<body>
+	<p class="left">До Директора <br>
+	на МГ "Д-р Петър Берон" <br>
+	гр. Варна</p>
+	<h1>Молба</h1>
+	<hr color="gray" width="30%" size="3">
+	<p class="center">от <br>
+	<i>Драган Панов Петков</i> <br>
+	ученик от 11<sup>"д"</sup> клас
+	</p>
+	<h3 style="margin-left:15%">Господин Директор,</h3>
+	<p class="justify">Моля да ми бъде отпусната стипендия за отличен успех през I учебен срок на учебната 2010 - 2011 година.</p>
+	<div>07.10.2010г. <br> гр. Варна</div>
+	<div style="margin-left:70%">С уважение: ....................<br> /Драган Петков/</div>
+	<span></span>
+	</body>
