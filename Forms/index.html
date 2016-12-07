@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		label {
+			display: inline-block;
+			width: 120px;
+		}
+		fieldset {
+	 		width: 350px;
+	 		border : 2px solid #990000;
+		}
+		input {
+			border: 1px solid black;
+			margin: 2px;
+		}
+	</style>
+</head>	
+<body style="font-family: Arial; color: #990000;">
+<div style="margin-left: 5%;">
+<form>
+	<p style="font-size: 1.5em;">ФОРМУЛЯР ЗА РЕЗЕРВАЦИЯ</p>
+	<fieldset>
+ 	<legend >Информация за престоя</legend>
+ 	<div style="font-size: 0.6em; color: black;">
+ 		<label>Възрастни * </label><input style="width: 10%;" type="text"/> <br> 
+	 	<label>Деца до 2 години</label><input style="width: 10%;" type="text"/> <br> 
+	 	<label>Деца от 2 до 8 години</label><input style="width: 10%;" type="text"/> <br>
+	 	<label>Вид стая *</label>
+	 	<select style="color: #990000; width: 30%; border: 1px solid black" name="room" size="1">
+			<option value="room" selected="selected">избери стая</option>
+			<option value="oneRoom">единична</option>
+			<option value="twoRooms">двойна</option>
+		</select> <br>
+	 	<label>Първи ден *</label><input style="width: 40%; color: #990000" type="date" value="2016-12-06" /> <a href="#">календар</a><br>
+	 	<label>Втори ден *</label><input style="width: 40%; color: #990000" type="date" value="" /> <a href="#">календар</a><br>
+ 	</div>
+ 	</fieldset>
+ 	<br>
+
+	<fieldset>
+ 	<legend >Лични данни</legend>
+ 	<div style="font-size: 0.6em; color: black;">
+	 	<label>Име *</label><input style="width: 60%;" type="text"/> <br>
+	 	<label>Фамилия * </label><input style="width: 60%;" type="text"/> <br>
+	 	<label>E-mail адрес *</label><input style="width: 60%;" type="text"/> <br>
+	 	<label>Телефон *</label><input style="width: 60%;" type="text"/> <br>
+ 		<div style="color: #990000;"><i>Полета, отбелязани със * са задължителни!</i></div>
+ 	</div>
+ 	</fieldset>
+</form>
+<br>
+<input style="background-color: #990000; color: white; border: 1px solid black;" type="submit" name="submitBtn" value="Резервирай">
+</div>
+</body>
+</html>
