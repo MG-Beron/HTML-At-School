@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inversion</title>
+	<style type="text/css">
+		.smallPicture {
+			width: 15%;
+			margin: 10px;
+			border: 1px solid gray;
+			transition: border-color;
+			padding: 5px; 
+		}
+		.smallPicture:hover {
+			border-color: red;
+		}
+		.invisible {
+			padding: 5px; 
+			opacity: 0;
+			height: 0;
+			width: 0;
+			top: 30%;
+			left: 35%;
+			position: absolute;
+
+			transition: opacity 3s;
+			transition-timing-function: linear;
+		} 
+		.divFrame {
+			text-align: center;
+			border-style: dashed;
+			border-width: 2px;
+			border-color: gray;
+		}
+		#wrapper {
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+		.centerAlign {
+			text-align: center;
+			margin: 5%;
+		}
+    	.smallPicture:hover + .invisible{
+    		opacity: 1;
+			border: 1px solid gray;
+    		height: 400px;
+    		width: 400px;
+    	}
+	</style>
+</head>
+<body>
+<div id="wrapper">
+	<div class="divFrame">
+		<img class="smallPicture" src="center.jpg">
+		<img class="invisible" src="center.jpg">
+
+		<img class="smallPicture" src="aquarium.jpg">
+		<img class="invisible" src="aquarium.jpg">
+
+		<img class="smallPicture" src="trainstation.jpg">
+		<img class="invisible" src="trainstation.jpg">
+
+		<img class="smallPicture" src="hotelmoussala.jpg">
+		<img class="invisible" src="hotelmoussala.jpg">
+
+		<img class="smallPicture" src="seafrozen.jpg">
+		<img class="invisible" src="seafrozen.jpg">
+	</div>
+</div>
+</body>
+</html>
