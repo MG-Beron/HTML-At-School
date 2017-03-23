@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+}
+hr.style-seven {
+	margin-top:1%;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+body{
+	margin:1%;
+	background-color: aliceblue;
+}
+header{
+	display: block;
+	overflow: auto;
+}
+nav ul{
+	list-style-type: none;
+	float: right;
+	width:35%;
+	margin-right: 5%; 
+	color: grey;
+	font-weight: normal;
+}
+nav ul li{
+	display: inline-block;
+	font-size: 1.7em;
+	padding-left:2.5%; 
+	padding-right:2.5%; 
+	border-width: 2px;
+	border-color: grey;
+	padding: 10px 15px;
+	border-bottom-style: solid;
+	transition: color 0.5s ease-in;
+	transition: background-color 0.5s ease-in
+}
+nav ul li:hover{
+
+	background-color: grey;
+	color:white;
+}
+#description{
+	font-size:2em;
+	color:grey;
+	clear: both;
+}
+#container{
+	margin:0 auto;
+	width:80%;
+	text-align: center;
+}
+.row{
+	margin:0 auto;
+}
+a span,.imageCurtain{
+	/*display:none;*/
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	padding-top: 30%;
+	height: 52%;
+	background-color: grey;
+	opacity: 0;
+	text-align: center;
+	z-index: 1;
+	/*vertical-align: middle;*/
+	transition: opacity 0.3s ease-in; 
+ }
+ a:hover .imageCurtain{
+ 	opacity: 0.8;
+ }
+ a:hover span{
+ 	opacity: 1;
+ }
+ a span{
+ 	opacity: 0;
+ 	background-color: transparent;
+ 	z-index: 2;
+ 	font-size: 1.7em;
+ 	text-transform: uppercase;
+ 	transition: opacity 0.3s ease-in; 
+ }
+a{	
+	margin:1%;
+	color:#fff;
+	text-decoration:none;
+	position: relative;
+	overflow: auto;
+	display: inline-block;
+}
+ a img{
+ 	position: relative;
+ 	/*margin:20px;*/
+ 	display: inline-block;
+ }
