@@ -1,0 +1,155 @@
+body {
+	padding: 0;
+	margin:0;
+	font-family: Calibri;
+	color: #8f8f8f;
+}
+
+header {
+	background-image: url("img01.png");	
+}
+
+h1 {
+	font-size: 220%;
+	color: white;
+	text-align: right;
+	margin: 0;
+	padding-top: 15;
+	padding-bottom: 15;
+	padding-right: 40;
+	padding-left: 40;
+	font-weight: normal;
+	margin-right: 15%;
+}
+
+main {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+ul { 
+	list-style-type: none; padding: 15px, 25px, 10px, 10px; margin: 0; 
+	font-size: 130%;
+	margin-left: 15%;
+}
+ul li { 
+	float:left; margin-left:2px;
+}
+
+ul li a {
+	text-decoration: none; color: white; padding: 10px; display: block;
+}
+
+ul li a:hover {
+	background-color: #237856; 
+	border-radius: 5px;
+}
+
+#headingPicture {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 4%;
+}
+
+#leftDiv {
+	float: left;
+	width: 280px;
+	text-align: justify;
+}
+
+#leftDiv > h2 {
+	font-weight: normal;
+}
+
+#leftDiv > p {
+	padding: 15px;
+	margin: 0px;
+	line-height: 130%;
+	font-size: 90%;
+	border-bottom: 1px dashed #c7c7c7;
+}
+
+#rightDiv {
+	float: left;
+	width: 660px;
+	text-align: justify;
+}
+
+#rightDiv > h2 {
+	color: #79A62E;
+	font-weight: normal;
+}
+
+#rightDiv > p {
+	padding: 15px;
+	margin: 0px;
+	line-height: 140%;
+}
+
+.clearDiv {
+	clear: both;
+}
+
+#wrapper {
+	text-align: center;
+}
+#secondPart {
+	background-color: white;
+	padding-top: 30px;
+	margin-left: 6%;
+}
+
+#leftDiv > h2 {
+	margin-left: 3%;
+}
+#rightDiv > h2 {
+	margin-left: 2%;
+}
+
+#thirdPart > h2 {
+	font-weight: normal;
+}
+
+#thirdPart > p {
+	font-size: 85%;
+}
+
+#first {
+	float: left;
+	width: 25%;
+	padding: 0 2% 0 0;
+	line-height: 130%;
+	text-align: left;
+}
+
+#second {
+	float: left;
+	width: 30%;
+	line-height: 130%;
+	padding: 0 2% 0 0;
+	text-align: left;
+}
+
+#third {
+	float: left;
+	width: 32%;
+	margin: 0;
+	padding: 0 2% 0 0;
+	line-height: 130%;
+	text-align: left;
+}
+
+.smallPicture {
+	border: 1px solid #ccc;
+	float: left;
+	padding: 3px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+footer {
+	clear:both;
+	text-align: center;
+	color: white;
+	background-color: green;
+	bottom: 0;
+}
