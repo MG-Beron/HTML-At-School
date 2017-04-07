@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple calculator</title>
+	<style type="text/css">
+	h1 {
+		margin-left: 10%;
+	}
+	#wrapper {
+		margin-left: 10%;
+		width: 40%;
+		border: 1px solid;
+	}
+	input[type=text] {
+	    width: 30%;
+	    margin: 8px 0;
+	    box-sizing: border-box;
+	}
+	</style>
+</head>
+<body>
+	<h1>Mega Ultra Giga Easy Calculator</h1>
+	<div id="wrapper">
+		<form>
+			<input type="text" id="firstNumber">
+			<input type="text" id="secondNumber">
+			<br>
+			Result:
+			<input type="text" id="result"> <br>	
+			<input type="button" onclick="sumNumbers()" value="+" name="plusBtn">
+			<input type="button" onclick="subtractNumbers()"value="-" name="minusBtn">
+			<input type="button" onclick="multiplyNumbers()"value="*" name="multiplyBtn">
+			<input type="button" onclick="divideNumbers()"value="/" name="divideBtn">
+			<input type="button" onclick="percentDivideNumbers()"value="%" name="percentBtn">
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		function sumNumbers() {
+			var firstNumber= Number(document.getElementById('firstNumber').value);
+			var secondNumber = Number(document.getElementById('secondNumber').value);
+			var result = firstNumber + secondNumber;
+			document.getElementById('result').value = result;
+		}
+
+		function subtractNumbers() {
+			var firstNumber= Number(document.getElementById('firstNumber').value);
+			var secondNumber = Number(document.getElementById('secondNumber').value);
+			var result = firstNumber - secondNumber;
+			document.getElementById('result').value = result;
+		}
+
+		function multiplyNumbers() {
+			var firstNumber= Number(document.getElementById('firstNumber').value);
+			var secondNumber = Number(document.getElementById('secondNumber').value);
+			var result = firstNumber * secondNumber;
+			document.getElementById('result').value = result;
+		}
+
+		function divideNumbers() {
+			var firstNumber= Number(document.getElementById('firstNumber').value);
+			var secondNumber = Number(document.getElementById('secondNumber').value);
+			var result = firstNumber / secondNumber;
+			document.getElementById('result').value = result;
+		}
+
+		function percentDivideNumbers() {
+			var firstNumber= Number(document.getElementById('firstNumber').value);
+			var secondNumber = Number(document.getElementById('secondNumber').value);
+			var result = firstNumber % secondNumber;
+			document.getElementById('result').value = result;
+		}
+	</script>
+</body>
+</html>
