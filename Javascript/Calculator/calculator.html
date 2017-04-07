@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+	h1 {
+		margin-left: 10%;
+	}
+	#wrapper {
+		margin-left: 10%;
+		width: 30%;
+		border: 1px solid;
+	}
+	#firstNumber {
+		display: none;
+	}
+	#operation {
+		display: none;
+	}
+	input[type='button'] {
+		margin: 1px;
+	}
+	</style>
+</head>
+<body>
+	<h1>Mega Ultra Giga Calculator</h1>
+	<div id="wrapper">
+		<form>
+			<input type="text" id="firstNumber" name="firstNumber">
+			<input type="text" id="operation" name="operation">
+			<input type="text" id="result" name="result">
+			<br>
+  			<input type="reset" value="C">
+  			<input type="button" value="*" onclick="
+			getElementById('firstNumber').value = getElementById('result').value; 
+			getElementById('operation').value ='multiply';
+			document.getElementById('result').value = '';" >
+  			<input type="button" value="/" onclick="
+  			getElementById('firstNumber').value = getElementById('result').value; 
+			getElementById('operation').value ='divide';
+			document.getElementById('result').value = '';">
+  			<input type="button" value="%" onclick="
+  			getElementById('firstNumber').value = getElementById('result').value; 
+			getElementById('operation').value ='percentDivide';
+			document.getElementById('result').value = '';"><br>
+			<input type="button" value="7" id="7"
+			onclick="getElementById('result').value += getElementById('7').value;">
+			<input type="button" value="8" id="8"
+			onclick="getElementById('result').value += getElementById('8').value;">
+			<input type="button" value="9" id="9"
+			onclick="getElementById('result').value += getElementById('9').value;">
+			<input type="button" value="-" id="minus"
+			onclick="getElementById('firstNumber').value = getElementById('result').value;
+			getElementById('operation').value ='minus';
+			document.getElementById('result').value = '';"><br>
+			<input type="button" value="4" id="4"
+			onclick="getElementById('result').value += getElementById('4').value;">
+			<input type="button" value="5" id="5"
+			onclick="getElementById('result').value += getElementById('5').value;">
+			<input type="button" value="6" id="6"
+			onclick="getElementById('result').value += getElementById('6').value;">
+			<input type="button" value="+" id="plus"
+			onclick="
+			getElementById('firstNumber').value = getElementById('result').value; 
+			getElementById('operation').value ='plus';
+			document.getElementById('result').value = '';"><br>
+			<input type="button" value="1" id="1" 
+			onclick="getElementById('result').value += getElementById('1').value;">
+			<input type="button" value="2" id="2"
+			onclick="getElementById('result').value += getElementById('2').value;">
+			<input type="button" value="3" id="3"
+			onclick="getElementById('result').value += getElementById('3').value;">
+			<input type="button" value="=" id="equals"
+			onclick="calculateResult()"><br>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+
+		function calculateResult() {
+			var first = Number(document.getElementById('firstNumber').value);
+			var second = Number(document.getElementById('result').value);
+
+			var operation = document.getElementById('operation').value;
+			
+			if (operation == "plus") {
+				document.getElementById('result').value = first + second;
+			} else if (operation == "minus") {
+				document.getElementById('result').value = first - second;
+			} else if (operation == "multiply") {
+				document.getElementById('result').value = first * second;
+			} else if (operation == "divide") {
+				document.getElementById('result').value = first / second;
+			} else if (operation == "percentDivide") {
+				document.getElementById('result').value = first % second;
+			}
+		}
+	</script>
+</body>
+</html>
