@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clock</title>
+	<style type="text/css">
+		.styling {
+			background-color: blue;
+			color: yellow;
+			font-size: 300%;
+		}
+	</style>
+	<script type="text/javascript">
+		function startTime() {
+			let time = new Date();
+			let hours = time.getHours();
+			let minutes = time.getMinutes() + 5;
+			let seconds = time.getSeconds();
+			let period = "am";
+			if (hours > 12) { 
+				hours -= 12;
+				period = "pm";
+			}
+
+			if (hours < 10) {
+				hours = "0" + hours;
+			}
+			if (minutes < 10) {
+				minutes = "0" + minutes;
+			}
+			if (seconds < 10) {
+				seconds = "0" + seconds;
+			}
+
+			document.getElementById('clockSpan').innerHTML = hours + ":" + minutes + ":" + seconds + " " + period;
+			setTimeout(startTime, 1000);
+		}
+	</script>
+</head>
+<body onload="startTime()">
+<span id="clockSpan" class="styling"></span>
+</body>
+</html>
